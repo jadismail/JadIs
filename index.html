@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deploy your websites in less than 60 seconds">
+    <meta property="og:title" content="Moshify...">
+    <meta property="og:description" content="Deploy your websites">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="http://moshified.com">
+    <title>Moshify - Go Online for Just $9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -28,21 +36,22 @@
         </nav>
     </header>
     <!-- Hero section -->
-    <section class="block block--dark block--skewed--left hero">
+    <section class="block block--dark block--skewed-left hero">
         <div class="contianer grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading" data-aos="slide-right">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy you websites in less than 60 seconds.</p>
                 <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
             <picture>
                 <source type="image/webp" srcset="large-images/banner.webp 1x, large-images/banner@2x.webp 2x">
                 <source type="image/png" srcset="large-images/banner.png 1x, large-images/banner@2x.png 2x">
-                <img class="hero__image" src="./large-images/banner.png" alt="">
+                <img class="hero__image" data-aos="zoom-in" src="./large-images/banner.png" alt="">
             </picture>
         </div>
     </section>
-    <section class="block container block-domain">
+
+    <section class="block container block-domain" data-aos="fade-up">
         <header class="block__header">
             <h2>Starting at $9 per month</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, numquam.</p>
@@ -64,7 +73,7 @@
         </ul>
     </section>
     <!-- Cards Block -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
         <div class="grid grid--1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -135,7 +144,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, amet.</p>
         </header>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                 <img src="./Images/easy.svg" class="icon icon--primary" alt="">
             </span>
@@ -144,7 +153,7 @@
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
 
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <!-- <source type="image/webp" srcset="large-images/easy.webp 1x, large-images/easy@2x.webp 2x" />
             <source type="image/jpg" srcset="large-images/easy.jpg 1x, large-images/easy@2x.jpg 2x" /> -->
                 <img class="feature__image" src="large-images/easy.jpg" alt="">
@@ -200,13 +209,13 @@
         </article>
     </section>
     <!-- Showcase Section -->
-    <section class="block block--dark block--skewed--right block-showcase">
+    <section class="block block--dark block--skewed-right block-showcase">
         <header class="block__header">
             <h2 class="block__heading">User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-            <img class="block-showcase__image" src="./large-images/ipad.png" alt="">
-            <ul class="list">
+            <img class="block-showcase__image" src="./large-images/ipad.png" alt="" data-aos="fade-right">
+            <ul class="list" data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -246,7 +255,7 @@
 
     <!-- Testimonail section -->
 
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
             <h2>What Our Customers are Saying</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nisi.</p>
@@ -299,10 +308,10 @@
     <footer class="block block--dark footer">
         <div class="container grid footer__sections ">
             <section class="collapsible collapsible--expanded footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading block__heading">Product</h2>
                     <img src="./Images/chevron.svg" class="icon icon--primary collapsible__chevron" alt="chevron-icon">
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="#">Website Hosting</a></li>
@@ -312,10 +321,10 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading block__heading">Company</h2>
                     <img src="./Images/chevron.svg" class="icon icon--primary collapsible__chevron" alt="chevron-icon">
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="#">About</a></li>
@@ -325,10 +334,10 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading block__heading">Support</h2>
                     <img src="./Images/chevron.svg" class="icon icon--primary collapsible__chevron" alt="chevron-icon">
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="#">Contact</a></li>
@@ -338,10 +347,10 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading block__heading">Domains</h2>
                     <img src="./Images/chevron.svg" class="icon icon--primary collapsible__chevron" alt="chevron-icon">
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="#">Domain Checker</a></li>
@@ -351,13 +360,17 @@
                 </div>
             </section>
 
-            <section class="footer__brand">
+            <div class="footer__brand">
                 <img src="./Images/logo.svg" alt="">
                 <p class="footer__copyright">Copyright 2022 Mosh Hamadeni</p>
-            </section>
+            </div>
         </div>
     </footer>
     <script src="./javascript/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
